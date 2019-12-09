@@ -13,9 +13,7 @@ client.on('guildMemberAdd', member => {
 });
 
 client.on('message', message => {
-  // If the message is "what is my avatar"
   if (message.content === '!avatar') {
-    // Send the user's avatar URL
     message.reply(message.author.avatarURL);
   }
 });
